@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Web Development Life Cycle</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body onLoad="changeImg()">
+
+	<h1>The Web Development Life Cycle</h1>
+<p>
+The overall view of the Web Development Life Cycle helps as a guideline to programmers/ web developers have a clear understanding of what the consumers want (what audience they want to target). This is a process that's mainly used for developing web pages at any level of difficulty. The Cycle includes 5 phases: Planning, Analysis, Design & Development, Testing, and finally Implementation & Maintenance (as shown below).
+</p>
+
+<style>
+	p{
+		color:black;
+	}
+</style>
+
+<script>
+ 
+var i=0;
+var images=[];
+var time=3000;
+images[0]='web1.png';
+images[1]='web2.png';
+images[2]='web3.png';
+function changeImg(){
+document.slide.src=images[i];
+if(i<images.length-1)
+{
+i++;
+}
+else
+{
+i=0;
+}
+setTimeout("changeImg()",time);
+}
+window.onload=changeImg;
+
+</script>
+
+<img src="web1.png" name="slide" alt="slide" width="320" height="400"/>
+
+	<h3>In Depth</h3>
+ <p>
+ To get more in depth with each section of the cycle, we'll begin with planning. Planning is the set purpose of the website. What is the purpose of this Web site? Many developers don't think of this, but you need to understand their computing environments. With that information in mind, it'll better help you understand how the average user's computer hardware power is visiting your site, leading you to better optimize your site. Also, you can gather up your information using a site map. <a href="https://xbsoftware.com/blog/website-development-process-full-guide/">A graphic/information of site maps can be shown here more in depth for a better understanding.</a>
+ </p>
+
+<p>
+In the analysis phase, web site creators must understand what information is relevant to the topic they are trying to represent to their audience. For example, if the developer wanted to create a website about house pets. Would he/she have information on house pets or football? House pets of course! You don't want to confuse your audience.
+</p>
+
+<p>
+Additionally, the next step in the cycle is design & development. This is where you want to really put in perspective of the audience. Where will the title be located, the headings, information, contact, how will everything come together? You don't want to make your website too complicated to understand for the user; so that's why there are different web page layouts. <a href="http://cs.tsu.edu/ghemri/CS117/ClassNotes/Web%20Development%20Life%20Cycle_small.htm">Here are various types of layouts a website can have!</a> To give a quickly summary, there are linear web site layouts, hierarchical website layouts, and webbed web site layouts.
+</p>
+
+<p>
+Next on the cycle is testing. Before you officially publish your site, you have to test it first! Testing allows the developer to see any missed errors within their code or website. Also, it'll show how functional their website actually is. This helps to ensure accurate execution. Furthermore, this aids in showcasing that your website is not only working, but compatible with all of the different "main" web browsers, and mobile (if that's your intent). According to our content from chapter 1, there is also stress testing. Stress testing determines what happens on your web site when greater numbers of users access the site. It verifies that a web site runs at an acceptable speed with many users.
+</p>
+
+<p>
+Finally, the last on our Web Development Cycle is the over all implementation & maintenance how your finished/ polished website. After you've completely finished and is comfortable with the outlining of your website, you publish it. Now, you're not finished yet because the developer (you) would have to keep maintenance on your website periodically. If you wish to update it, you'd have to go through the analysis/testing phase to ensure all bugs are out. Also, if you wish to change the complete look of your website, you'd go through the design & development phase yet again. <a href="http://csis.pace.edu/~marchese/CS389/L7/Ch7_summary.pdf">For more details about the up keep of your website, visit here!</a>
+</p>
+
+</body>
+</html>
